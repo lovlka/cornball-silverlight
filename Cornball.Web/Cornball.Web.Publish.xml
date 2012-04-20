@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="https://cornball.cloudapp.net:8172/MsDeploy.axd" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="Cornball.Web_IN_0_Web" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="True" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Cornball - Production" publishMethod="MSDeploy" replaceMatchingFiles="True" userName="victor" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArKUUwtYxN0Sw+EgUaSgXTgAAAAACAAAAAAAQZgAAAAEAACAAAABvYEz1HMPAwydvSyMj69FaXppYc+uilKprdUgd5IEHFQAAAAAOgAAAAAIAACAAAADS+7EhdO6xtZmoupgTHw2dkWv5USJ6QkVx+kS/o9YpdSAAAADQ6tY62TWk4y1rohjnis3i2HKsKhzl1lkCWDjcHCg5xUAAAACJLxWJjCE7E9vazDL0AVC3fPYzOlkSySLeP+dDbgfsVquFxOqf+qIE9GtFgjphxs9XZaCE7LdTMApoRnCQtyTU" SelectedForPublish="True" />
+</publishData>

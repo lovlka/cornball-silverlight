@@ -1,0 +1,94 @@
+﻿<UserControl x:Class="Cornball.Main" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+  <Grid Name="LayoutRoot" SizeChanged="GridSizeChanged">
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+      </Grid.RowDefinitions>
+      <Grid.Background>
+        <RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+          <GradientStop Color="#FF00AA00" Offset="0.0" />
+          <GradientStop Color="#FF005500" Offset="1.0" />
+        </RadialGradientBrush>
+      </Grid.Background>
+      <Grid Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+        <StackPanel Orientation="Horizontal" Margin="10">
+          <Button Click="NewClick" MouseEnter="MenuMouseEnter" MouseLeave="MenuMouseLeave"
+                  Style="{StaticResource ToolbarButton}" ToolTipService.ToolTip="{Binding Source={StaticResource Strings}, Path=MenuNew}">
+            <Button.Template>
+              <ControlTemplate>
+                <Image Source="/Cornball;component/Resources/Icons/New.png"></Image>
+              </ControlTemplate>
+            </Button.Template>
+          </Button>
+          <Button Click="UndoClick" MouseEnter="MenuMouseEnter" MouseLeave="MenuMouseLeave"
+                  Style="{StaticResource ToolbarButton}"
+                  ToolTipService.ToolTip="{Binding Source={StaticResource Strings}, Path=MenuUndo}">
+            <Button.Template>
+              <ControlTemplate>
+                <Image Source="/Cornball;component/Resources/Icons/Undo.png"></Image>
+              </ControlTemplate>
+            </Button.Template>
+          </Button>
+          <Button Click="StatsClick" MouseEnter="MenuMouseEnter" MouseLeave="MenuMouseLeave"
+                  Style="{StaticResource ToolbarButton}"
+                  ToolTipService.ToolTip="{Binding Source={StaticResource Strings}, Path=MenuStatistics}">
+            <Button.Template>
+              <ControlTemplate>
+                <Image Source="/Cornball;component/Resources/Icons/Stats.png"></Image>
+              </ControlTemplate>
+            </Button.Template>
+          </Button>
+          <Button Click="HighScoreClick" MouseEnter="MenuMouseEnter" MouseLeave="MenuMouseLeave"
+                  Style="{StaticResource ToolbarButton}"
+                  ToolTipService.ToolTip="{Binding Source={StaticResource Strings}, Path=MenuHighScore}">
+            <Button.Template>
+              <ControlTemplate>
+                <Image Source="/Cornball;component/Resources/Icons/HighScore.png"></Image>
+              </ControlTemplate>
+            </Button.Template>
+          </Button>
+          <Button Name="SoundEnabledButton" Click="SoundClick" MouseEnter="MenuMouseEnter" MouseLeave="MenuMouseLeave"
+                  Style="{StaticResource ToolbarButton}"
+                  ToolTipService.ToolTip="{Binding Source={StaticResource Strings}, Path=MenuSound}">
+            <Button.Template>
+              <ControlTemplate>
+                <Image Source="/Cornball;component/Resources/Icons/Sound.png"></Image>
+              </ControlTemplate>
+            </Button.Template>
+          </Button>
+          <Button Name="SoundDisabledButton" Click="SoundClick" MouseEnter="MenuMouseEnter" MouseLeave="MenuMouseLeave"
+                  Style="{StaticResource ToolbarButton}"
+                  ToolTipService.ToolTip="{Binding Source={StaticResource Strings}, Path=MenuSound}">
+            <Button.Template>
+              <ControlTemplate>
+                <Image Source="/Cornball;component/Resources/Icons/SoundDisabled.png"></Image>
+              </ControlTemplate>
+            </Button.Template>
+          </Button>
+          <Button Click="InfoClick" MouseEnter="MenuMouseEnter" MouseLeave="MenuMouseLeave"
+                  Style="{StaticResource ToolbarButton}"
+                  ToolTipService.ToolTip="{Binding Source={StaticResource Strings}, Path=MenuAbout}">
+            <Button.Template>
+              <ControlTemplate>
+                <Image Source="/Cornball;component/Resources/Icons/Info.png"></Image>
+              </ControlTemplate>
+            </Button.Template>
+          </Button>
+        </StackPanel>
+        <TextBlock Name="HighScore" HorizontalAlignment="Center" Style="{StaticResource ToolbarText}"></TextBlock>
+        <TextBlock Name="Status" HorizontalAlignment="Right" Style="{StaticResource ToolbarText}"></TextBlock>
+      </Grid>
+      <Canvas Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Name="Table"
+              RenderTransformOrigin="0.5,0.5">
+        <Canvas.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform x:Name="TableScale" ScaleX="1" ScaleY="1" />
+          </TransformGroup>
+        </Canvas.RenderTransform>
+      </Canvas>
+    </Grid>
+  </Grid>
+</UserControl>

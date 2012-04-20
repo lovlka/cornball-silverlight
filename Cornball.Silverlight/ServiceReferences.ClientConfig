@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_Statistics" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://lantisen.stodell.se/Statistics.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_Statistics"
+                contract="Statistics.Statistics" name="BasicHttpBinding_Statistics" />
+        </client>
+    </system.serviceModel>
+</configuration>

@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutText" xml:space="preserve">
+    <value>The goal of The Cornball is to put all the cards in order from 2 to king with one color on each line. What color is put on each line does not matter.Twos can only be put in a gap on the far left on the board. Other cards can only be put in a gap to the right of the card in the same color that is right before in order. No card can be put in a gap after the king.
+
+Drag a card to the right gap or double-click the card to automatically find the right place. Click on a gap and the right card for that gap will flash.
+
+Become a fan of The Cornball on Facebook! There you have the opportunity to make comments or get in touch with me. Thank you for playing The Cornball!
+
+/Victor Stodell</value>
+  </data>
+  <data name="Cornball" xml:space="preserve">
+    <value>The Cornball</value>
+  </data>
+  <data name="GameLoseText" xml:space="preserve">
+    <value>You failed to complete The Cornball!
+
+Score: {0}
+Moves: {1}</value>
+  </data>
+  <data name="GameLoseTitle" xml:space="preserve">
+    <value>Sorry!</value>
+  </data>
+  <data name="GameWinChecking" xml:space="preserve">
+    <value>Checking high score...</value>
+  </data>
+  <data name="GameWinHigh" xml:space="preserve">
+    <value>You made it to the high score list! Enter your name to send your score.</value>
+  </data>
+  <data name="GameWinNoHigh" xml:space="preserve">
+    <value>Unfortunately you did not set a high score this time.</value>
+  </data>
+  <data name="GameWinText" xml:space="preserve">
+    <value>You put all cards on the right place and finished The Cornball!
+
+Round: {0}
+Score: {1}
+Moves: {2}</value>
+  </data>
+  <data name="GameWinTitle" xml:space="preserve">
+    <value>Congratulations!</value>
+  </data>
+  <data name="HighestScore" xml:space="preserve">
+    <value>High score in {0}: {1} ({2})</value>
+  </data>
+  <data name="HighScore" xml:space="preserve">
+    <value>High score</value>
+  </data>
+  <data name="MenuAbout" xml:space="preserve">
+    <value>Rules and information</value>
+  </data>
+  <data name="MenuHighScore" xml:space="preserve">
+    <value>Show high score</value>
+  </data>
+  <data name="MenuNew" xml:space="preserve">
+    <value>Start new game</value>
+  </data>
+  <data name="MenuStatistics" xml:space="preserve">
+    <value>Show statistics</value>
+  </data>
+  <data name="MenuUndo" xml:space="preserve">
+    <value>Undo last move</value>
+  </data>
+  <data name="Moves" xml:space="preserve">
+    <value>Moves</value>
+  </data>
+  <data name="Round" xml:space="preserve">
+    <value>Round</value>
+  </data>
+  <data name="RoundEndText" xml:space="preserve">
+    <value>No more moves can be done, the cards are being reshuffled. {2} rounds to go.
+
+Score: {0}
+Moves: {1}</value>
+  </data>
+  <data name="RoundEndTitle" xml:space="preserve">
+    <value>End of round {0}</value>
+  </data>
+  <data name="Score" xml:space="preserve">
+    <value>Score</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="StatisticsLost" xml:space="preserve">
+    <value>Lost games</value>
+  </data>
+  <data name="StatisticsPlayed" xml:space="preserve">
+    <value>Played games</value>
+  </data>
+  <data name="StatisticsWonRound" xml:space="preserve">
+    <value>Completed in round {0}</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="HighScoreAllTime" xml:space="preserve">
+    <value>All time high</value>
+  </data>
+  <data name="HighScoreMonth" xml:space="preserve">
+    <value>Best in {0}</value>
+  </data>
+  <data name="HighestScoreLoading" xml:space="preserve">
+    <value>High score in {0}: loading...</value>
+  </data>
+  <data name="LastRoundEndText" xml:space="preserve">
+    <value>No more moves can be done, the cards are being reshuffled. 1 round to go.
+
+Score: {0}
+Moves: {1}</value>
+  </data>
+  <data name="MenuSound" xml:space="preserve">
+    <value>Sound on/off</value>
+  </data>
+</root>

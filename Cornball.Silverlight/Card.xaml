@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="Cornball.Card" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <UserControl.Resources>
+    <Storyboard x:Name="Hint">
+      <DoubleAnimationUsingKeyFrames AutoReverse="False" Duration="0:0:1.5" Storyboard.TargetName="HintRect"
+                                     Storyboard.TargetProperty="Opacity">
+        <DiscreteDoubleKeyFrame Value="0" KeyTime="0:0:0"></DiscreteDoubleKeyFrame>
+        <DiscreteDoubleKeyFrame Value="0.25" KeyTime="0:0:0.1"></DiscreteDoubleKeyFrame>
+        <DiscreteDoubleKeyFrame Value="0" KeyTime="0:0:0.2"></DiscreteDoubleKeyFrame>
+        <DiscreteDoubleKeyFrame Value="0.25" KeyTime="0:0:0.3"></DiscreteDoubleKeyFrame>
+        <DiscreteDoubleKeyFrame Value="0" KeyTime="0:0:0.4"></DiscreteDoubleKeyFrame>
+        <DiscreteDoubleKeyFrame Value="0.25" KeyTime="0:0:0.5"></DiscreteDoubleKeyFrame>
+        <DiscreteDoubleKeyFrame Value="0" KeyTime="0:0:1.5"></DiscreteDoubleKeyFrame>
+      </DoubleAnimationUsingKeyFrames>
+    </Storyboard>
+    <Storyboard x:Name="Error">
+      <DoubleAnimationUsingKeyFrames AutoReverse="False" Duration="0:0:0.350" Storyboard.TargetName="ErrorRect"
+                                     Storyboard.TargetProperty="Opacity">
+        <DiscreteDoubleKeyFrame Value="0.0" KeyTime="0:0:0.000"></DiscreteDoubleKeyFrame>
+        <DiscreteDoubleKeyFrame Value="0.25" KeyTime="0:0:0.050"></DiscreteDoubleKeyFrame>
+        <DiscreteDoubleKeyFrame Value="0.0" KeyTime="0:0:0.150"></DiscreteDoubleKeyFrame>
+        <DiscreteDoubleKeyFrame Value="0.25" KeyTime="0:0:0.250"></DiscreteDoubleKeyFrame>
+        <DiscreteDoubleKeyFrame Value="0.0" KeyTime="0:0:0.350"></DiscreteDoubleKeyFrame>
+      </DoubleAnimationUsingKeyFrames>
+    </Storyboard>
+  </UserControl.Resources>
+  <Grid Background="Transparent">
+    <Image Name="CardImage"></Image>
+    <Rectangle Name="InOrderRect" RadiusX="3" RadiusY="3" Opacity="0.25" Visibility="Collapsed">
+      <Rectangle.Fill>
+        <RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5">
+          <GradientStop Color="Gray" Offset="0.2"></GradientStop>
+          <GradientStop Color="Black" Offset="1"></GradientStop>
+        </RadialGradientBrush>
+      </Rectangle.Fill>
+    </Rectangle>
+    <Rectangle Name="HintRect" RadiusX="3" RadiusY="3" Opacity="0.0">
+      <Rectangle.Fill>
+        <RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5">
+          <GradientStop Color="LightYellow" Offset="0.2"></GradientStop>
+          <GradientStop Color="Yellow" Offset="1"></GradientStop>
+        </RadialGradientBrush>
+      </Rectangle.Fill>
+    </Rectangle>
+    <Rectangle Name="ErrorRect" RadiusX="3" RadiusY="3" Opacity="0.0">
+      <Rectangle.Fill>
+        <RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5">
+          <GradientStop Color="Pink" Offset="0.2"></GradientStop>
+          <GradientStop Color="Red" Offset="1"></GradientStop>
+        </RadialGradientBrush>
+      </Rectangle.Fill>
+    </Rectangle>
+  </Grid>
+</UserControl>

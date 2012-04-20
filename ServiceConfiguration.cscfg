@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="Cornball" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*">
+  <Role name="Cornball.Web">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="victor" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEEBcqeqj1WmESEe/OmCS5fAwDQYJKoZIhvcNAQEBBQAEggEAWU4U34pGiSMhYVqWIeQWhEHKHKQ8e4+81V2hFijwWgg4qBOwGnfjdRYLeJBl89RLlZm/gWXJc8dKErAMxW2x9VUcx5H2sdmN/kxEwj1oKEUoiJ0it8/WxI+KBIf6lg65R1LMUmMM02n6WDEZ9N6EgceZIeMvl4SwH3kgTgno9dFXebAbJPmdZSIwhEXvFyJHZZp/hQoQZP/n1W6rX7x3dW3cDdYdMmX/51dIaBpmmPVPm7ontkEoJu+uBIFYd94vdk/Cfh43hfjQMv+m2tXO+zjDttRlPbgfaPAhNDSnAPNi0tj1G1iCdtoonzTEYgMah3qUkzuDt15URd2XV0PtMzAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECGicqUTc5tsBgBA/8cw+KYRTcK41FzP1au63" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2014-12-31T23:59:59.0000000+01:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="74B29ED68F77A6BF8BCE1C17100FA4763370CD98" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

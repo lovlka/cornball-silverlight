@@ -1,0 +1,34 @@
+html { height: 100%; }
+
+body {
+    background: #FFFFFF;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+div, object {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    color: #444444;
+    font-family: Helvetica, Arial, Sans-Serif;
+    margin: 20px 20px 10px 20px;
+}
+
+h2 {
+    color: #666666;
+    font-family: Helvetica, Arial, Sans-Serif;
+    margin: 10px 20px 20px 20px;
+}
+
+p {
+    color: #444444;
+    font-family: Georgia, Serif;
+    margin: 10px 20px 10px 20px;
+}
+
+img { margin: 50px 20px 0 20px; }

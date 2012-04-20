@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c61958fd-5e36-4467-976c-e31ce5e599aa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://lantisen.stodell.se/Statistics.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Statistics.disco" MetadataType="Disco" ID="94ec141f-65cd-4282-9086-48c30dfe532c" SourceId="1" SourceUrl="http://lantisen.stodell.se/Statistics.svc?disco" />
+    <MetadataFile FileName="Statistics.xsd" MetadataType="Schema" ID="edc999e9-c5fd-41ae-b4aa-75c80c748b85" SourceId="1" SourceUrl="http://lantisen.stodell.se/Statistics.svc?xsd=xsd1" />
+    <MetadataFile FileName="Statistics.wsdl" MetadataType="Wsdl" ID="96caa46b-fa0e-48c3-972d-500a2fda37cd" SourceId="1" SourceUrl="http://lantisen.stodell.se/Statistics.svc?wsdl" />
+    <MetadataFile FileName="Statistics1.wsdl" MetadataType="Wsdl" ID="7cc53017-116e-40ec-a94c-4ea0b2c96540" SourceId="1" SourceUrl="http://lantisen.stodell.se/Statistics.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="Statistics1.xsd" MetadataType="Schema" ID="c86e9b74-7efd-4520-a083-d244b3371a4d" SourceId="1" SourceUrl="http://lantisen.stodell.se/Statistics.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

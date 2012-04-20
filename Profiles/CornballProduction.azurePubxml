@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AzureCredentials>Cornball</AzureCredentials>
+    <AzureDeploymentLabel>Cornball - 2011-07-06 09:46:19</AzureDeploymentLabel>
+    <AzureSlot>Production</AzureSlot>
+    <AzureEnableWebDeploy>True</AzureEnableWebDeploy>
+    <AzureHostedServiceName>cornball</AzureHostedServiceName>
+    <AzureHostedServiceLabel>Cornball</AzureHostedServiceLabel>
+    <AzureEnableIntelliTrace>False</AzureEnableIntelliTrace>
+    <AzureEnableProfiling>False</AzureEnableProfiling>
+    <AzureServiceConfiguration>Default</AzureServiceConfiguration>
+    <AzureSolutionConfiguration>Release</AzureSolutionConfiguration>
+    <AzureStorageAccountName>comit</AzureStorageAccountName>
+    <AzureStorageAccountLabel>comit</AzureStorageAccountLabel>
+    <AzureAppendTimestampToDeploymentLabel>True</AzureAppendTimestampToDeploymentLabel>
+    <AzureAllowUpgrade>True</AzureAllowUpgrade>
+    <AzureEnableRemoteDesktop>True</AzureEnableRemoteDesktop>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy"
+                  xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://lantisen.stodell.se/"
+                  xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract"
+                  xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex"
+                  xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
+                  xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+                  xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://lantisen.stodell.se/"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://lantisen.stodell.se/Imports">
+      <xsd:import schemaLocation="http://lantisen.stodell.se/Statistics.svc?xsd=xsd0"
+                  namespace="http://lantisen.stodell.se/" />
+      <xsd:import schemaLocation="http://lantisen.stodell.se/Statistics.svc?xsd=xsd1"
+                  namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Statistics_IncreaseValue_InputMessage">
+    <wsdl:part name="parameters" element="tns:IncreaseValue" />
+  </wsdl:message>
+  <wsdl:message name="Statistics_IncreaseValue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IncreaseValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="Statistics_GetStatistics_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatistics" />
+  </wsdl:message>
+  <wsdl:message name="Statistics_GetStatistics_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Statistics_SaveHighscore_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveHighscore" />
+  </wsdl:message>
+  <wsdl:message name="Statistics_SaveHighscore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveHighscoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="Statistics_GetHighscores_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHighscores" />
+  </wsdl:message>
+  <wsdl:message name="Statistics_GetHighscores_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHighscoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="Statistics_IsHighscore_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsHighscore" />
+  </wsdl:message>
+  <wsdl:message name="Statistics_IsHighscore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsHighscoreResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Statistics">
+    <wsdl:operation name="IncreaseValue">
+      <wsdl:input wsaw:Action="http://lantisen.stodell.se/Statistics/IncreaseValue"
+                  message="tns:Statistics_IncreaseValue_InputMessage" />
+      <wsdl:output wsaw:Action="http://lantisen.stodell.se/Statistics/IncreaseValueResponse"
+                   message="tns:Statistics_IncreaseValue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatistics">
+      <wsdl:input wsaw:Action="http://lantisen.stodell.se/Statistics/GetStatistics"
+                  message="tns:Statistics_GetStatistics_InputMessage" />
+      <wsdl:output wsaw:Action="http://lantisen.stodell.se/Statistics/GetStatisticsResponse"
+                   message="tns:Statistics_GetStatistics_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveHighscore">
+      <wsdl:input wsaw:Action="http://lantisen.stodell.se/Statistics/SaveHighscore"
+                  message="tns:Statistics_SaveHighscore_InputMessage" />
+      <wsdl:output wsaw:Action="http://lantisen.stodell.se/Statistics/SaveHighscoreResponse"
+                   message="tns:Statistics_SaveHighscore_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHighscores">
+      <wsdl:input wsaw:Action="http://lantisen.stodell.se/Statistics/GetHighscores"
+                  message="tns:Statistics_GetHighscores_InputMessage" />
+      <wsdl:output wsaw:Action="http://lantisen.stodell.se/Statistics/GetHighscoresResponse"
+                   message="tns:Statistics_GetHighscores_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsHighscore">
+      <wsdl:input wsaw:Action="http://lantisen.stodell.se/Statistics/IsHighscore"
+                  message="tns:Statistics_IsHighscore_InputMessage" />
+      <wsdl:output wsaw:Action="http://lantisen.stodell.se/Statistics/IsHighscoreResponse"
+                   message="tns:Statistics_IsHighscore_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
