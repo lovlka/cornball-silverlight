@@ -11,7 +11,7 @@
     <RootNamespace>Cornball</RootNamespace>
     <AssemblyName>Cornball</AssemblyName>
     <StartDevelopmentStorage>True</StartDevelopmentStorage>
-    <Name>Cornball</Name>
+    <Name>Cornball.Azure</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

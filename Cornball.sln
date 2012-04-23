@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "Cornball", "Cornball.ccproj", "{48D73A24-A75C-4D1D-9C8E-A91A70767955}"
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "Cornball.Azure", "Cornball.Azure.ccproj", "{48D73A24-A75C-4D1D-9C8E-A91A70767955}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cornball.Web", "Cornball.Web\Cornball.Web.csproj", "{1AA5063F-A007-4ADD-897F-D3F54853B08F}"
 EndProject

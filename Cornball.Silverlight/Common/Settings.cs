@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO.IsolatedStorage;
 
-namespace Cornball
+namespace Cornball.Common
 {
     internal static class Settings
     {

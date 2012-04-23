@@ -100,10 +100,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Settings.cs" />
-    <Compile Include="Sound.cs" />
+    <Compile Include="Common\Settings.cs" />
+    <Compile Include="Common\Sound.cs" />
     <Compile Include="Deal.cs" />
-    <Compile Include="Animation.cs" />
+    <Compile Include="Common\Animation.cs" />
     <Compile Include="Dialog.xaml.cs">
       <DependentUpon>Dialog.xaml</DependentUpon>
     </Compile>
@@ -132,7 +132,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Styles.cs" />
+    <Compile Include="Resources\Styles.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -162,12 +162,6 @@
     <Content Include="Properties\AppManifest.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Page Include="SplashScreen.xaml">
-      <Generator>MSBuild:MarkupCompilePass1</Generator>
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\Statistics\Cornball.Statistics.DataItem.datasource">
@@ -181,6 +175,7 @@
     <None Include="Service References\Statistics\Statistics1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="ServiceReferences.ClientConfig" />
     <Resource Include="Resources\PoweredByAzure.png" />
     <None Include="Service References\Statistics\Statistics.disco" />
     <None Include="Service References\Statistics\configuration91.svcinfo" />
@@ -195,9 +190,6 @@
     <Content Include="Resources\Sounds\Correct.wav" />
     <Content Include="Resources\Sounds\GameLost.wav" />
     <Content Include="Resources\Sounds\GameWon.wav" />
-    <Content Include="ServiceReferences.ClientConfig">
-      <SubType>Designer</SubType>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Deck\Clubs1.png" />

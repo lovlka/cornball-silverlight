@@ -3,6 +3,8 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media.Animation;
+using Cornball.Common;
+using Cornball.Resources;
 
 namespace Cornball
 {

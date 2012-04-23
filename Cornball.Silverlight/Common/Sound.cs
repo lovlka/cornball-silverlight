@@ -4,7 +4,7 @@ using System.Windows;
 using System.Windows.Resources;
 using Microsoft.Xna.Framework.Audio;
 
-namespace Cornball
+namespace Cornball.Common
 {
     public static class Sound
     {

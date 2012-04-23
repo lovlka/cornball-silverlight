@@ -14,7 +14,7 @@
     <AssemblyName>Cornball.Web</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
-    <SilverlightApplicationList>{6CCB9545-E8D5-49B5-B789-9FC2088E8A64}|..\Cornball.Silverlight\Cornball.Silverlight.csproj||False</SilverlightApplicationList>
+    <SilverlightApplicationList>{6CCB9545-E8D5-49B5-B789-9FC2088E8A64}|..\Cornball.Silverlight\Cornball.Silverlight.csproj|Resources|False</SilverlightApplicationList>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -72,20 +72,14 @@
     <Content Include="clientaccesspolicy.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Cornball.xap" />
-    <Content Include="Resources\Cornball.xap">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="favicon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Global.asax" />
-    <Content Include="google1c0e052ba5234fa8.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Resources\cornball.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\Cornball.xap" />
     <Content Include="Resources\script.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -132,11 +126,9 @@
     </Compile>
     <Compile Include="Azure\WebRole.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="SplashScreen.xaml">
+    <Content Include="Resources\SplashScreen.xaml">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Media.Animation;
 
-namespace Cornball
+namespace Cornball.Common
 {
     public static class Animation
     {

@@ -8,6 +8,7 @@ using System.Windows.Input;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Threading;
+using Cornball.Common;
 using Cornball.Resources;
 using Cornball.Statistics;
 

@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Cornball
+namespace Cornball.Resources
 {
     public static class Styles
     {
