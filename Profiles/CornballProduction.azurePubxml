@@ -14,7 +14,7 @@
     <AzureStorageAccountName>comit</AzureStorageAccountName>
     <AzureStorageAccountLabel>comit</AzureStorageAccountLabel>
     <AzureAppendTimestampToDeploymentLabel>True</AzureAppendTimestampToDeploymentLabel>
-    <AzureAllowUpgrade>True</AzureAllowUpgrade>
     <AzureEnableRemoteDesktop>True</AzureEnableRemoteDesktop>
+    <AzureDeploymentReplacementMethod>AutomaticUpgrade</AzureDeploymentReplacementMethod>
   </PropertyGroup>
 </Project>
