@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="Cornball.Services.Statistics" CodeBehind="Statistics.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Cornball.Web.Services.Statistics" CodeBehind="Statistics.svc.cs" %>

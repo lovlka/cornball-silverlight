@@ -102,26 +102,5 @@ namespace Cornball.Web.Services
 
         #endregion
 
-        public List<DataItem> GetHighscores(int limit, int days)
-        {
-            var score = new List<DataItem>();
-            using (var connection = new SqlConnection(Connection))
-            {
-                using (var command = new SqlCommand("EXEC GetHighscores @Limit, @Days", connection))
-                {
-                    command.Parameters.AddWithValue("@Limit", limit);
-                    command.Parameters.AddWithValue("@Days", days);
-                    command.Connection.Open();
-                    using (SqlDataReader dataReader = command.ExecuteReader())
-                    {
-                        while (dataReader.Read())
-                        {
-                            score.Add(new DataItem(dataReader.GetString(0), dataReader.GetInt32(1)));
-                        }
-                    }
-                }
-            }
-            return score;
-        }
     }
 }
