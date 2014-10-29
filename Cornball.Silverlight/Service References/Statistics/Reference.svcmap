@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c61958fd-5e36-4467-976c-e31ce5e599aa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9b01169c-2b1e-4945-bc22-a9e42a8d8071" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
     <EnableDataBinding>true</EnableDataBinding>
@@ -20,14 +20,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://lantisen.stodell.se/Statistics.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://cornball.cloudapp.net/Services/Statistics.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Statistics.disco" MetadataType="Disco" ID="94ec141f-65cd-4282-9086-48c30dfe532c" SourceId="1" SourceUrl="http://lantisen.stodell.se/Statistics.svc?disco" />
-    <MetadataFile FileName="Statistics.xsd" MetadataType="Schema" ID="edc999e9-c5fd-41ae-b4aa-75c80c748b85" SourceId="1" SourceUrl="http://lantisen.stodell.se/Statistics.svc?xsd=xsd1" />
-    <MetadataFile FileName="Statistics.wsdl" MetadataType="Wsdl" ID="96caa46b-fa0e-48c3-972d-500a2fda37cd" SourceId="1" SourceUrl="http://lantisen.stodell.se/Statistics.svc?wsdl" />
-    <MetadataFile FileName="Statistics1.wsdl" MetadataType="Wsdl" ID="7cc53017-116e-40ec-a94c-4ea0b2c96540" SourceId="1" SourceUrl="http://lantisen.stodell.se/Statistics.svc?wsdl=wsdl0" />
-    <MetadataFile FileName="Statistics1.xsd" MetadataType="Schema" ID="c86e9b74-7efd-4520-a083-d244b3371a4d" SourceId="1" SourceUrl="http://lantisen.stodell.se/Statistics.svc?xsd=xsd0" />
+    <MetadataFile FileName="Statistics.xsd" MetadataType="Schema" ID="1d63affc-36b7-4ec8-b5f7-35249c11b3f7" SourceId="1" SourceUrl="http://cornball.cloudapp.net/services/Statistics.svc?xsd=xsd0" />
+    <MetadataFile FileName="Statistics1.xsd" MetadataType="Schema" ID="770df8bd-225a-4331-ae8f-4c728390cb1f" SourceId="1" SourceUrl="http://cornball.cloudapp.net/services/Statistics.svc?xsd=xsd1" />
+    <MetadataFile FileName="Statistics.disco" MetadataType="Disco" ID="e71556d7-5e66-4ebe-b341-dd8aa1a4ea72" SourceId="1" SourceUrl="http://cornball.cloudapp.net/services/Statistics.svc?disco" />
+    <MetadataFile FileName="Statistics.wsdl" MetadataType="Wsdl" ID="bae0d980-7c60-4e2b-9748-d4ddb1a5d62b" SourceId="1" SourceUrl="http://cornball.cloudapp.net/services/Statistics.svc?wsdl" />
+    <MetadataFile FileName="Statistics1.wsdl" MetadataType="Wsdl" ID="0d5864d8-de27-4f42-b771-95045a11cc18" SourceId="1" SourceUrl="http://cornball.cloudapp.net/services/Statistics.svc?wsdl=wsdl0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

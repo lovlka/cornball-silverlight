@@ -9,7 +9,7 @@
             </basicHttpBinding>
         </bindings>
         <client>
-            <endpoint address="http://lantisen.stodell.se/Statistics.svc"
+            <endpoint address="http://cornball.cloudapp.net/services/Statistics.svc"
                 binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_Statistics"
                 contract="Statistics.Statistics" name="BasicHttpBinding_Statistics" />
         </client>
