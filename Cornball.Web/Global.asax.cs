@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Web;
+using System.Web.Http;
 
 namespace Cornball.Web
 {
@@ -7,7 +8,7 @@ namespace Cornball.Web
     {
         private void Application_Start(object sender, EventArgs e)
         {
-            // Code that runs on application startup
+            GlobalConfiguration.Configure(Config.WebApiConfig.Register);
         }
 
         private void Application_End(object sender, EventArgs e)
