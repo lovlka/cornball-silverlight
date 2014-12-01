@@ -11,5 +11,11 @@ namespace Cornball.Web.Controllers
             var statistics = new Statistics();
             return statistics.GetStatistics();
         }
+
+        public void Post(DataItem dataItem)
+        {
+            var statistics = new Statistics();
+            statistics.IncreaseValue(dataItem.Name);
+        }
     }
 }

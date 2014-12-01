@@ -1,4 +1,5 @@
 ﻿using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace Cornball.Web.Services
 {
@@ -12,9 +13,11 @@ namespace Cornball.Web.Services
         }
 
         [DataMember]
+        [JsonProperty("name")]
         public string Name { get; private set; }
 
         [DataMember]
+        [JsonProperty("value")]
         public int Value { get; private set; }
     }
 }

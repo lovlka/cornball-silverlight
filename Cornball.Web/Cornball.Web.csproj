@@ -153,7 +153,7 @@
   <ItemGroup>
     <Compile Include="Azure\AzureLocalStorageTraceListener.cs" />
     <Compile Include="Config\WebApiConfig.cs" />
-    <Compile Include="Controllers\CheckHighScoreController.cs" />
+    <Compile Include="Controllers\HighScoreController.cs" />
     <Compile Include="Controllers\HighScoresController.cs" />
     <Compile Include="Controllers\StatisticsController.cs" />
     <Compile Include="Resources\Strings.sv-SE1.Designer.cs">
@@ -211,6 +211,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\Cornball - Production.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

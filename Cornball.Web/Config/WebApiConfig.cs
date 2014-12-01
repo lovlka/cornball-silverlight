@@ -8,6 +8,11 @@ namespace Cornball.Web.Config
         public static void Register(HttpConfiguration config)
         {
             config.Routes.MapHttpRoute(
+                name: "HighScore",
+                routeTemplate: "api/{controller}/{limit}/{score}"
+            );
+
+            config.Routes.MapHttpRoute(
                 name: "HighScores",
                 routeTemplate: "api/{controller}/{limit}/{startDate}/{endDate}",
                 defaults: new { startDate = RouteParameter.Optional, endDate = RouteParameter.Optional }
