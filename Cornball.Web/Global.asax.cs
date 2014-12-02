@@ -33,10 +33,5 @@ namespace Cornball.Web
             // is set to InProc in the Web.config file. If session mode is set to StateServer 
             // or SQLServer, the event is not raised.
         }
-
-        protected void Application_BeginRequest()
-        {
-            HttpContext.Current.Response.AddHeader("Access-Control-Allow-Origin", "*");
-        }
     }
 }

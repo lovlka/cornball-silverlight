@@ -1,5 +1,6 @@
 using System.Net.Http.Headers;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace Cornball.Web.Config
 {
@@ -7,6 +8,8 @@ namespace Cornball.Web.Config
     {
         public static void Register(HttpConfiguration config)
         {
+            config.EnableCors(new EnableCorsAttribute("*", "*", "*"));
+
             config.Routes.MapHttpRoute(
                 name: "HighScore",
                 routeTemplate: "api/{controller}/{limit}/{score}"
